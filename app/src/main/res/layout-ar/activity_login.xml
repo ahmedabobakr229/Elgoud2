@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.LoginActivity"
+    android:background="@drawable/bg"
+    android:gravity="center">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".login.LoginActivity"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"
+                android:layout_gravity="center" />
+
+            <itboom.com.elgoud.views.EljoudTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textColor="@color/yellow"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <itboom.com.elgoud.views.EljoudEditText
+                    android:id="@+id/email"
+                    android:maxLines="1"
+                    android:paddingEnd="20dp"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ico_3"
+                    android:layout_gravity="center_vertical|start"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <itboom.com.elgoud.views.EljoudEditText
+                    android:id="@+id/password"
+                    android:maxLines="1"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ico_4"
+                    android:layout_gravity="center_vertical|start"/>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <itboom.com.elgoud.views.EljoudTextView
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forget_password"/>
+
+                <itboom.com.elgoud.views.EljoudTextView
+                    android:id="@+id/register"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_user"/>
+            </RelativeLayout>
+
+
+
+            <itboom.com.elgoud.views.EljoudButton
+                android:layout_marginBottom="10dp"
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                style="@style/Widget.Eljoud.Button.Red"
+                app:cornerRadius="20dp"
+                android:textAllCaps="false"
+                android:text="@string/login" />
+
+            <itboom.com.elgoud.views.EljoudTextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_sign"
+                android:layout_marginBottom="10dp"/>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
+            <itboom.com.elgoud.views.EljoudButton
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                style="@style/Widget.Eljoud.Button.Red"
+                app:cornerRadius="20dp"
+                app:icon="@drawable/ico_1"
+                android:textAllCaps="false"
+                android:text="@string/skip" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

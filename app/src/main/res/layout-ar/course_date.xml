@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ico_15"
+            android:backgroundTint="@android:color/holo_green_dark"/>
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:id="@+id/date"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date date date date date date date"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:cardCornerRadius="55dp"
+        app:cardElevation="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:background="@drawable/card_shape"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/item_image"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:scaleType="center"
+                android:src="@drawable/bg"
+                app:riv_corner_radius_top_right="55dp"
+                app:riv_corner_radius_bottom_right="55dp"
+                app:riv_corner_radius_bottom_left="55dp"
+                app:riv_corner_radius_top_left="0dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <itboom.com.elgoud.views.EljoudTextView
+                    android:textAlignment="viewStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Lorem Epsum"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/item_title"/>
+
+                <itboom.com.elgoud.views.EljoudTextView
+                    android:textAlignment="viewStart"
+                    android:id="@+id/item_description"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

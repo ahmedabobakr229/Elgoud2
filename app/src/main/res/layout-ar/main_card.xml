@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    app:cardCornerRadius="55dp"
+    app:cardElevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:background="@drawable/card_shape"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/item_image"
+            android:layout_alignParentStart="true"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/bg"
+            android:scaleType="center"
+            app:riv_corner_radius="55dp"/>
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:layout_toEndOf="@id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Lorem Epsum"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:maxLines="2"
+            android:id="@+id/item_title"/>
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:textDirection="rtl"
+            android:textAlignment="viewStart"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="35dp"
+            android:maxLines="3"
+            android:layout_below="@id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/item_description"
+            android:text="Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum"/>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:id="@+id/lock"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ico_20"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

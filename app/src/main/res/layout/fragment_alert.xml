@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp">
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:id="@+id/alertText"
+            android:text="@string/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </FrameLayout>
+
+    <itboom.com.elgoud.views.EljoudButton
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        style="@style/Widget.Eljoud.Button.Red"
+        app:cornerRadius="20dp"
+        android:textAllCaps="false"
+        android:text="@string/ok" />
+</LinearLayout>

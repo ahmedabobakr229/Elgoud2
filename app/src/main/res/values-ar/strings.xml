@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Elgoud</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="free_courses">المجانية</string>
+    <string name="title_notifications">الاشعارات</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="email_or_mobile">البريد الالكترونى او رقم التليفون</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_password">هل نسيت الرقم السرى؟</string>
+    <string name="new_user">تسجيل مستخدم جديد</string>
+    <string name="login">دخول</string>
+    <string name="or_sign">او سجل</string>
+    <string name="skip">تخطى</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="mob_number">رقم التليفون</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="register">تسجيل</string>
+    <string name="search">بحث</string>
+    <string name="home">الرئيسية</string>
+    <string name="blog">المدونة</string>
+    <string name="profile">الشخصى</string>
+    <string name="paid_courses">المدفوعة</string>
+    <string name="new_video">تم تنزيل فيديو جديد بعنوان</string>
+    <string name="open">فتح</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="send">ارسال</string>
+    <string name="my_courses">دوراتى</string>
+    <string name="courses_date">مواعيد الدورات</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="save">حفظ</string>
+    <string name="email_error">بريد الكترونى خاطئ</string>
+    <string name="username_error">اسم خاطئ</string>
+    <string name="phone_error">رقم تليفون خاطئ</string>
+    <string name="password_error">كلمة مرور خطأ</string>
+    <string name="confirm_pass_error">تأكيد كلمة المرور خاطئ</string>
+    <string name="have_account">لدى حساب</string>
+    <string name="no_items">لا يوجد دورات متاحة</string>
+    <string name="message">الرسالة</string>
+    <string name="ok">حسنا</string>
+    <string name="success_request">"طلبك قيد التنفيذ، انتظر رساله تأكيد "</string>
+    <string name="folders">الملفات</string>
+    <string name="select_image">اختر صورة</string>
+    <string name="change_password_message">ادخل الرقم السرى الجديد او اضغط على علامة الانهاء لتحديث البيانات الأخرى فقط</string>
+    <string name="hello_blank_fragment">hello blanck fragment</string>
+    <string name="is_open_response">الدورة مقفولة الان</string>
+
+    <string name="facebook_app_id">912237678969603</string>
+    <string name="fb_login_protocol_scheme">fb912237678969603</string>
+
+</resources>

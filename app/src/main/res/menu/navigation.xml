@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ico_14"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/free_courses"
+        android:icon="@drawable/ico_0"
+        android:title="@string/free_courses" />
+
+    <item
+        android:id="@+id/paid_courses"
+        android:icon="@drawable/ico_13"
+        android:title="@string/paid_courses" />
+
+    <item
+        android:id="@+id/blog"
+        android:icon="@drawable/ico_11"
+        android:title="@string/blog" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ico_10"
+        android:title="@string/profile" />
+
+</menu>

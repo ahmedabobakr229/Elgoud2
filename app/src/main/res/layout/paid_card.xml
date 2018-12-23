@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="125dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="115dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardCornerRadius="55dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:background="@drawable/card_shape"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/item_image"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="110dp"
+                    android:src="@drawable/bg"
+                    android:scaleType="center"
+                    app:riv_corner_radius_top_left="55dp"
+                    app:riv_corner_radius_bottom_left="55dp"
+                    app:riv_corner_radius_bottom_right="55dp"
+                    app:riv_corner_radius_top_right="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="95dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <itboom.com.elgoud.views.EljoudTextView
+                        android:layout_toEndOf="@id/item_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="Lorem Epsum"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:maxLines="2"
+                        android:id="@+id/item_title"/>
+
+                    <itboom.com.elgoud.views.EljoudTextView
+                        android:textAlignment="viewStart"
+                        android:layout_toEndOf="@id/item_image"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:maxLines="3"
+                        android:layout_below="@id/item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/item_description"
+                        android:text="Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ico_20"/>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom">
+
+        <ImageView
+            android:id="@+id/unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_8" />
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

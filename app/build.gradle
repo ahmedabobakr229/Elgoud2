@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "itboom.com.elgoud"
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-beta02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta02'
+
+
+    //multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //DI
+    implementation 'com.google.dagger:dagger:2.16'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    //okhttp3
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    //rx-java
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+
+    //butter knife
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+
+    //transition-everywhere
+    implementation "com.andkulikov:transitionseverywhere:1.8.0"
+
+    //circle image
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    //progress circle
+    implementation 'com.github.CardinalNow:Android-CircleProgressIndicator:v0.2'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //rounded image
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //custom youtube
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:8.0.1'
+
+    //image picker
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:1.13.1'
+    implementation 'com.github.esafirm.android-image-picker:rximagepicker:1.13.1'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+
+    //youtube api key
+    //AIzaSyAdIiY-urNLMm3RS2-v9_FtsWucASyJ3os
+
+
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'pub.devrel:easypermissions:0.3.0'
+    implementation('com.google.api-client:google-api-client-android:1.25.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation('com.google.apis:google-api-services-youtube:v3-rev206-1.25.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    //image slider
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+
+    //facebook
+    implementation 'com.facebook.android:facebook-android-sdk:4.34.0'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    //volley
+    implementation 'com.android.volley:volley:1.1.1'
+}
+apply plugin: 'com.google.gms.google-services'

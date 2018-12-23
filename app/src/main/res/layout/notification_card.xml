@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="55dp"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:background="@drawable/card_shape"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notification_image"
+            android:layout_alignParentStart="true"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/shape_7"/>
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:layout_toEndOf="@id/notification_image"
+            android:layout_marginStart="5dp"
+            android:id="@+id/static_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_video"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"/>
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:layout_toEndOf="@id/notification_image"
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Lorem ipsum Lorem ipsum Lorem ipsum"
+            android:layout_marginEnd="90dp"
+            android:maxLines="2"
+            android:layout_below="@id/static_title"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <itboom.com.elgoud.views.EljoudTextView
+            android:id="@+id/notification_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="date date date date"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:backgroundTint="@color/black"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ico_15"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
